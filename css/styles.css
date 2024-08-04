@@ -849,6 +849,10 @@ address {
 }
 
 
+.modal-form-checkbox-label_container {
+  margin-bottom: 24px;
+}
+
 .checkbox-text {
   font-size: 12px;
   font-weight: 400;
