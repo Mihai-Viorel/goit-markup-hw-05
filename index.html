@@ -475,14 +475,18 @@
         </div>
 
         <div class="modal-form-checkbox-label_container">
-          <label class="modal-form-checkbox-label">
-            
-            <input type="checkbox" class="modal-form-checkbox" id="comment" name="comment">
-            <span class="checkbox-text">
-              I agree with the letter and accept the
-              <a href="#" class="terms-and-conditions">Terms and Conditions</a>
+          <input type="checkbox" class="modal-form-checkbox visually-hidden" id="user-privacy" name="user-privacy" value="true">
+          <label for="user-privacy" class="checkbox-text">
+            I agree with the letter and accept the
+            <span class="checkbox-span">
+              <svg width="10" height="8" class="checkbox-icon">
+                <use href="./images/icons.svg#icon-form-checkbox"></use>
+              </svg>
             </span>
           </label>
+
+          <a href="#" class="terms-and-conditions">Privacy Policy</a>
+          
         </div>
 
         <button type="submit" class="modal-form_submit-button">
