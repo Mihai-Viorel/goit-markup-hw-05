@@ -875,7 +875,7 @@ address {
   fill: transparent;
 }
 
-.modal-form-checkbox:checked .checkbox-span{
+.modal-form-checkbox:checked + .checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
