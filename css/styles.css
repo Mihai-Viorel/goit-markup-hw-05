@@ -674,3 +674,261 @@ address {
   max-width: 1440px;
 }
 
+/*  --------------------------------------------------------------------- Modal Button --------------------------------------------------------------------- */
+
+.modal-backdrop {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  background-color: var(--primary-grey-40);
+  visibility: hidden;
+  z-index: 999;
+}
+
+.modal-backdrop.is-open {
+  visibility: initial;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 408px;
+  min-height: 584px;
+}
+
+.btn-close-modal {
+  position: relative;
+  top: 24px;
+  margin-left: auto;
+  margin-right: 24px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cornflower);
+  cursor: pointer;
+  transition: 
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close-modal:hover,
+.btn-close-modal:focus {
+  fill: var(--white);
+  background-color: red;
+}
+
+/*  ============== Stilizare Formular ============== */
+
+.modal-container {
+  border: none;
+  border-radius: 4px;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-form-title {
+  margin-top: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0px 24px 0px 24px;
+}
+
+.modal-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
+.modal-form-input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding-left: 38px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-label_container {
+  position: relative;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:hover,
+.modal-form-input:focus,
+.modal-form-input:active {
+  border: 1px solid var(--iris);
+}
+
+.modal-form-label_container:hover svg,
+.modal-form-label_container:focus svg,
+.modal-form-label_container:active svg {
+  fill: var(--iris);
+}
+
+.form-input-icon {
+  fill: var(--navy-blue);
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus + svg {
+  fill: var(--iris);
+}
+
+.modal-form-comment {
+  width: 360px;
+  height: 120px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+  resize: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-comment:hover,
+.modal-form-comment:focus,
+.modal-form-comment:active {
+  border: 1px solid var(--iris);
+}
+
+
+.checkbox-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.333;
+  letter-spacing: 0.04em;
+}
+
+.modal-form-checkbox-label_container {
+  display: flex;
+  align-items: center;
+}
+
+.modal-form_submit-button {
+  width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--iris);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 16px;
+  margin-left: 95px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form_submit-button:hover,
+.modal-form_submit-button:focus {
+  background-color: var(--ocean);
+}
+
+/*  ============== Footer Formular ============== */
+
+.footer-subscribe-form_container-gr1 {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: row;
+  width: 453px;
+  height: 80px;
+}
+
+.footer-subscribe_label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-subscribe_input {
+  background-color: var(--navy-blue);
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.footer-subscribe_input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.footer-subscribe_button {
+  width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--iris);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  position: relative;
+  color: var(--white);
+  text-align: left;
+  padding-left: 24px;
+  margin-left: 24px;
+  margin-top: 40px;
+}
+
+.footer-subscribe-icon {
+  position: absolute;
+  top: 8px;
+  left: 117px;
+  fill: var(--white);
+}
