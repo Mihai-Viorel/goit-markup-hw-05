@@ -848,7 +848,7 @@ address {
 }
 
 
-.modal-form-checkbox-label_container {
+.modal-form-checkbox_container {
   margin-bottom: 24px;
 }
 
@@ -875,7 +875,7 @@ address {
   fill: transparent;
 }
 
-.modal-form-checkbox:checked + .checkbox-span {
+.modal-form-checkbox:checked + .checkbox-text .checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
